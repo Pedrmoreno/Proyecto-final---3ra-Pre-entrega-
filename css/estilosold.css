@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Imagen/mejores-fondos-de-pantalla-1.webp)
+    
+}  
+
+@media screen and (min-width: 380px){
+   
+    body{
+        background-color: #000000;
+        background-image: url(../Imagen/mejores-fondos-de-pantalla-1.webp) ;
+        
+    }
+
+}
+.contenedor{
+    margin: auto;
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 4fr 0.7fr;
+    grid-template-areas: 
+    "header header" 
+    "main aside" 
+    "footer footer";
+    
+}
+.header{
+ 
+    grid-area: header;
+    width: 95%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+
+.estilonav {
+    list-style: none;
+    display: flex;
+    
+}
+.header .menu a{
+    color: #004280;
+    text-decoration: none;
+    padding: 20px;
+}
+.header .menu a:hover{
+    background-color: #004280;
+    color: rgb(222, 220, 245);
+    border-radius: 20px;
+    
+}
+.main{
+    grid-area: main;
+    padding: 1.2rem;
+}
+.main article .principal{
+    margin-bottom: 20px;
+}
+.main article .principal img{
+    vertical-align: top;
+    width: 100%;
+}
+main article{
+    margin: 20px;
+    font-weight: normal;
+}
+.main article p{
+    margin: 20px;
+    line-height: 1.5;
+}
+.main article h2{
+    text-align: center;
+    
+}
+.aside{
+    grid-area: aside;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(223, 18, 18);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footer{
+    grid-area: footer;
+    border: 3px #130c0c solid;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 253);
+    opacity: .7;
+    padding: 15px;
+    width: 100%;
+    color: #0a0a0a;
+    display: flex;
+}
+ 
+ @media screen and (max-width: 600px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.7fr;
+        grid-template-areas:
+        "body" 
+        "header" 
+        "nav"
+        "main" 
+        "footer";  
+    }
+
+ }
+
+    

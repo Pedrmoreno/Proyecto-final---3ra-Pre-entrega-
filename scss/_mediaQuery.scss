@@ -1,0 +1,13 @@
+@media screen and (max-width: 400px) {
+  .contenedor {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+}
